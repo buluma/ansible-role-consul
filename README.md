@@ -4,7 +4,7 @@ Install and configure consul on your system.
 
 |GitHub|GitLab|Quality|Downloads|Version|
 |------|------|-------|---------|-------|
-|[![github](https://github.com/buluma/ansible-role-consul/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-consul/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-consul/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-consul)|[![quality](https://img.shields.io/ansible/quality/57874)](https://galaxy.ansible.com/buluma/dns)|![downloads](https://img.shields.io/ansible/role/d/57874)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-consul.svg)](https://github.com/buluma/ansible-role-consul/releases/)|
+|[![github](https://github.com/buluma/ansible-role-consul/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-consul/actions)|[![gitlab](https://gitlab.com/buluma/ansible-role-consul/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-consul)|[![quality](https://img.shields.io/ansible/quality/57874)](https://galaxy.ansible.com/buluma/consul)|[![downloads](https://img.shields.io/ansible/role/d/57874)](https://galaxy.ansible.com/buluma/consul)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-consul.svg)](https://github.com/buluma/ansible-role-consul/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
