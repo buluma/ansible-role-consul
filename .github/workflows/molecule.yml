@@ -7,12 +7,13 @@ name: Ansible Molecule
 
 on:
   push:
+    branches:
+      - '**'
     tags-ignore:
       - '*'
   pull_request:
   schedule:
-    - cron: '5 3 6,2 * *'
-  workflow_dispatch:
+    - cron: '5 3 3 * *'
 
 jobs:
   lint:
@@ -34,13 +35,21 @@ jobs:
       fail-fast: false
       matrix:
         config:
-          - image: "fedora"
+          - image: "amazonlinux"
+            tag: "latest"
+          - image: "debian-systemd"
+            tag: "latest"
+          - image: "centos"
+            tag: "7"
+          - image: "centos"
+            tag: "latest"
+          - image: "fedora-systemd"
             tag: "34"
-          - image: "fedora"
+          - image: "fedora-systemd"
             tag: "latest"
-          - image: "ubuntu"
+          - image: "docker-ubuntu-systemd"
             tag: "latest"
-          - image: "ubuntu"
+          - image: "docker-ubuntu-systemd"
             tag: "bionic"
     steps:
       - name: checkout
