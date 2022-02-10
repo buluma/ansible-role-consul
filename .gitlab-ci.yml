@@ -62,7 +62,7 @@ galaxy:
   script:
     - ansible-galaxy role info buluma.consul
 
-testing:
+testing_role:
   script:
     - image=${image} tag=${tag} ansible-galaxy install buluma.consul
   rules:
