@@ -20,8 +20,10 @@ molecule:
         tag: "latest"
       - image: "debian-systemd"
         tag: "latest"
-      - image: "centos-systemd"
+      - image: "enterpriselinux"
         tag: "7"
+      - image: "enterpriselinux"
+        tag: "latest"
       - image: "fedora-systemd"
         tag: "34"
       - image: "fedora-systemd"
@@ -43,8 +45,10 @@ testing:
         tag: "latest"
       - image: "debian-systemd"
         tag: "latest"
-      - image: "centos-systemd"
+      - image: "enterpriselinux"
         tag: "7"
+      - image: "enterpriselinux"
+        tag: "latest"
       - image: "fedora-systemd"
         tag: "34"
       - image: "fedora-systemd"
@@ -56,4 +60,8 @@ testing:
 
 galaxy:
   script:
-    - ansible-galaxy role info ${CI_PROJECT_NAMESPACE}.consul
+    - ansible-galaxy role info buluma.consul
+
+test_role:
+  script:
+    - ansible-galaxy install buluma.consul
