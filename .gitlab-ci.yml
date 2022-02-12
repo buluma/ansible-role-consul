@@ -1,5 +1,5 @@
 ---
-image: "buluma/github-action-molecule:4.0.5"
+image: "buluma/github-action-molecule:4.0.6"
 
 services:
   - docker:dind
@@ -32,6 +32,8 @@ molecule:
         tag: "latest"
       - image: "docker-ubuntu-systemd"
         tag: "bionic"
+      - image: "docker-ubuntu-systemd"
+        tag: "focal"
 
 testing:
   script:
@@ -57,16 +59,14 @@ testing:
         tag: "latest"
       - image: "docker-ubuntu-systemd"
         tag: "bionic"
+      - image: "docker-ubuntu-systemd"
+        tag: "focal"
 
-galaxy:
-  script:
-    - ansible-galaxy role info buluma.consul
-
-testing_role:
+role_testing:
   script:
     - image=${image} tag=${tag} ansible-galaxy install buluma.consul
   rules:
-    - if: $CI_COMMIT_REF_NAME == "main"
+    - if: $CI_COMMIT_REF_NAME == "testing"
   retry: 1
   parallel:
     matrix:
@@ -86,3 +86,34 @@ testing_role:
         tag: "latest"
       - image: "docker-ubuntu-systemd"
         tag: "bionic"
+      - image: "docker-ubuntu-systemd"
+        tag: "focal"
+
+galaxy:
+  script:
+    - ansible-galaxy role info buluma.consul
+
+role_testing_live:
+  script:
+    - image=${image} tag=${tag} ansible-galaxy install buluma.consul
+  retry: 1
+  parallel:
+    matrix:
+      - image: "amazonlinux"
+        tag: "latest"
+      - image: "debian-systemd"
+        tag: "latest"
+      - image: "enterpriselinux"
+        tag: "7"
+      - image: "enterpriselinux"
+        tag: "latest"
+      - image: "fedora-systemd"
+        tag: "34"
+      - image: "fedora-systemd"
+        tag: "latest"
+      - image: "docker-ubuntu-systemd"
+        tag: "latest"
+      - image: "docker-ubuntu-systemd"
+        tag: "bionic"
+      - image: "docker-ubuntu-systemd"
+        tag: "focal"
