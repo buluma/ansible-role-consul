@@ -2,5 +2,5 @@
 roles:
   - name: buluma.bootstrap
   - name: buluma.core_dependencies
-  - name: robertdebock.hashicorp
+  - name: buluma.hashicorp
 collections:

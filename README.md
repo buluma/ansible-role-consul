@@ -32,7 +32,7 @@ The machine needs to be prepared. In CI this is done using `molecule/default/pre
   roles:
     - role: buluma.bootstrap
     - role: buluma.core_dependencies
-    - role: robertdebock.hashicorp
+    - role: buluma.hashicorp
 ```
 
 
@@ -94,7 +94,7 @@ The following roles are used to prepare a system. You can prepare your system in
 |-------------|--------|--------|
 |[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Build Status GitHub](https://github.com/buluma/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-bootstrap/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-bootstrap)|
 |[buluma.core_dependencies](https://galaxy.ansible.com/buluma/core_dependencies)|[![Build Status GitHub](https://github.com/buluma/ansible-role-core_dependencies/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-core_dependencies/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-core_dependencies/badges/main/pipeline.svg)](https://gitlab.com/buluma/ansible-role-core_dependencies)|
-|[robertdebock.hashicorp](https://galaxy.ansible.com/buluma/robertdebock.hashicorp)|[![Build Status GitHub](https://github.com/robertdebock/ansible-role-hashicorp/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-hashicorp/actions)|[![Build Status GitLab ](https://gitlab.com/robertdebock/ansible-role-hashicorp/badges/master/pipeline.svg)](https://gitlab.com/robertdebock/ansible-role-hashicorp)|
+|[buluma.hashicorp](https://galaxy.ansible.com/buluma/buluma.hashicorp)|[![Build Status GitHub](https://github.com/buluma/ansible-role-hashicorp/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-hashicorp/actions)|[![Build Status GitLab ](https://gitlab.com/buluma/ansible-role-hashicorp/badges/master/pipeline.svg)](https://gitlab.com/buluma/ansible-role-hashicorp)|
 
 ## [Context](#context)
 
