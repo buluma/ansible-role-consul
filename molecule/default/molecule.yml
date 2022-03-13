@@ -14,8 +14,8 @@ lint: |
 driver:
   name: docker
 platforms:
-  - name: "consul-${image:-docker-ubuntu-systemd}-${tag:-latest}${TOX_ENVNAME}"
-    image: "${namespace:-buluma}/${image:-docker-ubuntu-systemd}:${tag:-latest}"
+  - name: "consul-${image:-fedora-systemd}-${tag:-latest}${TOX_ENVNAME}"
+    image: "${namespace:-buluma}/${image:-fedora-systemd}:${tag:-latest}"
     command: /sbin/init
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
