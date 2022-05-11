@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-consul/tree/HEAD)
+## [2.0.2](https://github.com/buluma/ansible-role-consul/tree/2.0.2) (2022-05-02)
 
-[Full Changelog](https://github.com/buluma/ansible-role-consul/compare/2.0.1...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-consul/compare/2.0.1...2.0.2)
 
 **Merged pull requests:**
 
