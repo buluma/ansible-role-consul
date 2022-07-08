@@ -1,8 +1,7 @@
 ---
 galaxy_info:
-  author: Michael Buluma
+  author: buluma
   role_name: consul
-  namespace: buluma
   description: Install and configure consul on your system.
   license: Apache-2.0
   company: ShadowNet
@@ -20,8 +19,8 @@ galaxy_info:
         - all
     - name: Fedora
       versions:
-        - 34
-        - 35
+        - "34"
+        - "35"
     - name: Ubuntu
       versions:
         - all
