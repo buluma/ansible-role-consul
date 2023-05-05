@@ -31,35 +31,3 @@ provisioner:
       interpreter_python: auto_legacy_silent
 verifier:
   name: ansible
-scenario:
-  create_sequence:
-    - create
-    - prepare
-  check_sequence:
-    - cleanup
-    - destroy
-    - create
-    - prepare
-    - converge
-    - check
-    - destroy
-  converge_sequence:
-    - create
-    - prepare
-    - converge
-  destroy_sequence:
-    - cleanup
-    - destroy
-  test_sequence:
-    - lint
-    - cleanup
-    - destroy
-    - syntax
-    - create
-    - prepare
-    - converge
-    - idempotence
-    - side_effect
-    - verify
-    - cleanup
-    - destroy
