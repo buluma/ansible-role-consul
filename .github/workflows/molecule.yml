@@ -56,7 +56,7 @@ jobs:
           - image: "fedora-systemd"
             tag: "37"
           - image: "fedora-systemd"
-            tag: "latest"
+            tag: "38"
           - image: "docker-ubuntu-systemd"
             tag: "latest"
           - image: "docker-ubuntu-systemd"
