@@ -97,7 +97,7 @@ consul_server: yes
 #     port: 80
 
 # In same cases you may not want to start Consul as a service, because you are "bootstrapping" for example.
-consule_service_started_and_enabled: yes
+consul_service_started_and_enabled: yes
 ```
 
 ## [Requirements](#requirements)

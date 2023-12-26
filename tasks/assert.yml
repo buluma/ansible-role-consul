@@ -114,9 +114,9 @@
   loop_control:
     label: "{{ item.name }}"
 
-- name: assert | Test consule_service_started_and_enabled
+- name: assert | Test consul_service_started_and_enabled
   ansible.builtin.assert:
     that:
-      - consule_service_started_and_enabled defined
-      - consule_service_started_and_enabled boolean
+      - consul_service_started_and_enabled defined
+      - consul_service_started_and_enabled boolean
     quiet: yes
