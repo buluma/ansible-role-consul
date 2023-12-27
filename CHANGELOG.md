@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-consul/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-consul/compare/2.0.6...HEAD)
+
+**Closed issues:**
+
+- Update buluma/todo-to-issue-action@v1.0.1 @buluma [\#17](https://github.com/buluma/ansible-role-consul/issues/17)
+
 ## [2.0.6](https://github.com/buluma/ansible-role-consul/tree/2.0.6) (2023-12-17)
 
 [Full Changelog](https://github.com/buluma/ansible-role-consul/compare/2.0.5...2.0.6)
