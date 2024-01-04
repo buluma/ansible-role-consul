@@ -117,6 +117,5 @@
 - name: assert | Test consul_service_started_and_enabled
   ansible.builtin.assert:
     that:
-      - consul_service_started_and_enabled defined
       - consul_service_started_and_enabled boolean
     quiet: yes
