@@ -62,5 +62,3 @@
     name: consul
     state: started
     enabled: yes
-  when:
-    - consul_service_started_and_enabled
