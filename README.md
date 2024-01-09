@@ -22,6 +22,7 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
       consul_bootstrap_expect: 1
       consul_encrypt: "6r73CP0icJrap1tsQ17yuqzVguho4/yz+aI/dkVg2Kk="
       consul_bind_addr: "0.0.0.0"
+      consul_service_started_and_enabled: yes
       consul_services:
         - name: web
           tags:
