@@ -1,5 +1,13 @@
 # Changelog
 
+## [Unreleased](https://github.com/buluma/ansible-role-consul/tree/HEAD)
+
+[Full Changelog](https://github.com/buluma/ansible-role-consul/compare/24.04.20...HEAD)
+
+**Closed issues:**
+
+- rebuild action [\#15](https://github.com/buluma/ansible-role-consul/issues/15)
+
 ## [24.04.20](https://github.com/buluma/ansible-role-consul/tree/24.04.20) (2024-04-20)
 
 [Full Changelog](https://github.com/buluma/ansible-role-consul/compare/2.0.6...24.04.20)
