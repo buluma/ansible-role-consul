@@ -1,10 +1,10 @@
-# Ansible role [consul](https://galaxy.ansible.com/ui/standalone/roles/buluma/consul/documentation)
+# [Ansible role consul](#ansible-role-consul)
 
 Install and configure consul on your system.
 
-|GitHub|Version|Issues|Pull Requests|Downloads|
-|------|-------|------|-------------|---------|
-|[![github](https://github.com/buluma/ansible-role-consul/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-consul/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-consul.svg)](https://github.com/buluma/ansible-role-consul/releases/)|[![Issues](https://img.shields.io/github/issues/buluma/ansible-role-consul.svg)](https://github.com/buluma/ansible-role-consul/issues/)|[![PullRequests](https://img.shields.io/github/issues-pr-closed-raw/buluma/ansible-role-consul.svg)](https://github.com/buluma/ansible-role-consul/pulls/)|[![Ansible Role](https://img.shields.io/ansible/role/d/buluma/consul)](https://galaxy.ansible.com/ui/standalone/roles/buluma/consul/documentation)|
+|GitHub|GitLab|Downloads|Version|
+|------|------|---------|-------|
+|[![github](https://github.com/buluma/ansible-role-consul/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-consul/actions)|[![gitlab](https://gitlab.com/shadowwalker/ansible-role-consul/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-consul)|[![downloads](https://img.shields.io/ansible/role/d/buluma/consul)](https://galaxy.ansible.com/buluma/consul)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-consul.svg)](https://github.com/buluma/ansible-role-consul/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
@@ -111,18 +111,17 @@ consule_service_started_and_enabled: true
 
 The following roles are used to prepare a system. You can prepare your system in another way.
 
-| Requirement | GitHub | Version |
+| Requirement | GitHub | GitLab |
 |-------------|--------|--------|
-|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Ansible Molecule](https://github.com/buluma/ansible-role-bootstrap/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-bootstrap.svg)](https://github.com/shadowwalker/ansible-role-bootstrap)|
-|[buluma.core_dependencies](https://galaxy.ansible.com/buluma/core_dependencies)|[![Ansible Molecule](https://github.com/buluma/ansible-role-core_dependencies/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-core_dependencies/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-core_dependencies.svg)](https://github.com/shadowwalker/ansible-role-core_dependencies)|
-|[buluma.hashicorp](https://galaxy.ansible.com/buluma/hashicorp)|[![Ansible Molecule](https://github.com/buluma/ansible-role-hashicorp/actions/workflows/molecule.yml/badge.svg)](https://github.com/buluma/ansible-role-hashicorp/actions/workflows/molecule.yml)|[![Version](https://img.shields.io/github/release/buluma/ansible-role-hashicorp.svg)](https://github.com/shadowwalker/ansible-role-hashicorp)|
+|[buluma.bootstrap](https://galaxy.ansible.com/buluma/bootstrap)|[![Build Status GitHub](https://github.com/buluma/ansible-role-bootstrap/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-bootstrap/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/ansible-role-bootstrap/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-bootstrap)|
+|[buluma.core_dependencies](https://galaxy.ansible.com/buluma/core_dependencies)|[![Build Status GitHub](https://github.com/buluma/ansible-role-core_dependencies/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-core_dependencies/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/ansible-role-core_dependencies/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-core_dependencies)|
+|[buluma.hashicorp](https://galaxy.ansible.com/buluma/hashicorp)|[![Build Status GitHub](https://github.com/buluma/ansible-role-hashicorp/workflows/Ansible%20Molecule/badge.svg)](https://github.com/buluma/ansible-role-hashicorp/actions)|[![Build Status GitLab](https://gitlab.com/shadowwalker/ansible-role-hashicorp/badges/master/pipeline.svg)](https://gitlab.com/shadowwalker/ansible-role-hashicorp)|
 
 ## [Context](#context)
 
-This role is a part of many compatible roles. Have a look at [the documentation of these roles](https://buluma.github.io/) for further information.
+This role is part of many compatible roles. Have a look at [the documentation of these roles](https://buluma.github.io/) for further information.
 
 Here is an overview of related roles:
-
 ![dependencies](https://raw.githubusercontent.com/buluma/ansible-role-consul/png/requirements.png "Dependencies")
 
 ## [Compatibility](#compatibility)
@@ -131,28 +130,25 @@ This role has been tested on these [container images](https://hub.docker.com/u/b
 
 |container|tags|
 |---------|----|
-|[Amazon](https://hub.docker.com/r/buluma/amazonlinux)|Candidate|
-|[Debian](https://hub.docker.com/r/buluma/debian)|bullseye|
+|[Amazon](https://hub.docker.com/r/buluma/amazonlinux)|all|
+|[Debian](https://hub.docker.com/r/buluma/debian)|all|
 |[EL](https://hub.docker.com/r/buluma/enterpriselinux)|all|
-|[Fedora](https://hub.docker.com/r/buluma/fedora)|37, 38|
+|[Fedora](https://hub.docker.com/r/buluma/fedora)|all|
 |[Ubuntu](https://hub.docker.com/r/buluma/ubuntu)|all|
 
-The minimum version of Ansible required is 2.12, tests have been done to:
+The minimum version of Ansible required is 2.12, tests have been done on:
 
 - The previous version.
 - The current version.
 - The development version.
 
-If you find issues, please register them in [GitHub](https://github.com/buluma/ansible-role-consul/issues)
-
-## [Changelog](#changelog)
-
-[Role History](https://github.com/buluma/ansible-role-consul/blob/master/CHANGELOG.md)
+If you find issues, please register them on [GitHub](https://github.com/buluma/ansible-role-consul/issues).
 
 ## [License](#license)
 
-[Apache-2.0](https://github.com/buluma/ansible-role-consul/blob/master/LICENSE)
+[Apache-2.0](https://github.com/buluma/ansible-role-consul/blob/master/LICENSE).
 
 ## [Author Information](#author-information)
 
-[Shadow Walker](https://buluma.github.io/)
+[buluma](https://buluma.github.io/)
+
