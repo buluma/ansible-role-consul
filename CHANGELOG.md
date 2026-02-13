@@ -6,6 +6,7 @@
 
 **Closed issues:**
 
+- Update action [\#16](https://github.com/buluma/ansible-role-consul/issues/16)
 - rebuild action [\#15](https://github.com/buluma/ansible-role-consul/issues/15)
 
 ## [24.04.20](https://github.com/buluma/ansible-role-consul/tree/24.04.20) (2024-04-20)
