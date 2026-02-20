@@ -1,5 +1,4 @@
 ---
-
 - name: assert | Test consul_install_package
   ansible.builtin.assert:
     that:
