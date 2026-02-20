@@ -51,8 +51,6 @@ jobs:
           - image: "docker-molecule-images"
             tag: "bullseye"
           - image: "enterpriselinux"
-            tag: "8"
-          - image: "enterpriselinux"
             tag: "latest"
           - image: "docker-molecule-images"
             tag: "fedora_latest"
