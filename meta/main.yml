@@ -1,10 +1,12 @@
 ---
+dependencies: []
 galaxy_info:
   author: buluma
-  role_name: consul
-  description: Install and configure consul on your system.
-  license: Apache-2.0
   company: ShadowNet
+  description: Install and configure consul on your system.
+  galaxy_tags:
+    - consul
+  license: Apache-2.0
   min_ansible_version: "2.12"
   platforms:
     - name: Amazon
@@ -22,6 +24,4 @@ galaxy_info:
     - name: Ubuntu
       versions:
         - all
-  galaxy_tags:
-    - consul
-dependencies: []
+  role_name: consul

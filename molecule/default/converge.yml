@@ -1,16 +1,14 @@
----
-- name: Converge
-  hosts: all
-  become: true
+- become: true
   gather_facts: false
-
+  hosts: all
+  name: Converge
   roles:
-    - role: buluma.consul
-      consul_bootstrap_expect: 1
-      consul_encrypt: "6r73CP0icJrap1tsQ17yuqzVguho4/yz+aI/dkVg2Kk="
-      consul_bind_addr: "0.0.0.0"
-      consul_services:
-        - name: web
-          tags:
-            - rails
-          port: 80
+  - consul_bind_addr: 0.0.0.0
+    consul_bootstrap_expect: 1
+    consul_encrypt: 6r73CP0icJrap1tsQ17yuqzVguho4/yz+aI/dkVg2Kk=
+    consul_services:
+    - name: web
+      port: 80
+      tags:
+      - rails
+    role: buluma.consul
