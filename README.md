@@ -12,34 +12,34 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 
 ```yaml
 ---
-  - become: true
-    gather_facts: false
-    hosts: all
-    name: Converge
-    roles:
-      - consul_bind_addr: 0.0.0.0
-        consul_bootstrap_expect: 1
-        consul_encrypt: 6r73CP0icJrap1tsQ17yuqzVguho4/yz+aI/dkVg2Kk=
-        consul_services:
-          - name: web
-            port: 80
-            tags:
-              - rails
-        role: buluma.consul
+- become: true
+  gather_facts: false
+  hosts: all
+  name: Converge
+  roles:
+  - consul_bind_addr: 0.0.0.0
+    consul_bootstrap_expect: 1
+    consul_encrypt: 6r73CP0icJrap1tsQ17yuqzVguho4/yz+aI/dkVg2Kk=
+    consul_services:
+    - name: web
+      port: 80
+      tags:
+      - rails
+    role: buluma.consul
 ```
 
 The machine needs to be prepared. In CI this is done using [`molecule/default/prepare.yml`](https://github.com/buluma/ansible-role-consul/blob/master/molecule/default/prepare.yml):
 
 ```yaml
 ---
-  - become: true
-    gather_facts: false
-    hosts: all
-    name: Prepare
-    roles:
-      - role: buluma.bootstrap
-      - role: buluma.core_dependencies
-      - role: buluma.hashicorp
+- become: true
+  gather_facts: false
+  hosts: all
+  name: Prepare
+  roles:
+  - role: buluma.bootstrap
+  - role: buluma.core_dependencies
+  - role: buluma.hashicorp
 ```
 
 Also see a [full explanation and example](https://buluma.github.io/how-to-use-these-roles.html) on how to use these roles.

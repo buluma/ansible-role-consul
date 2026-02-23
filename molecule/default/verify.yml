@@ -1,10 +1,10 @@
 ---
-  - become: true
-    gather_facts: true
-    hosts: all
-    name: Verify
-    tasks:
-      - ansible.builtin.command:
-          cmd: consul --version
-        changed_when: false
-        name: Check if consul can run
+- become: true
+  gather_facts: true
+  hosts: all
+  name: Verify
+  tasks:
+  - ansible.builtin.command:
+      cmd: consul --version
+    changed_when: false
+    name: Check if consul can run
