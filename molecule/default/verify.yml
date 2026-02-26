@@ -1,11 +1,9 @@
----
-- name: Verify
-  hosts: all
-  become: true
+- become: true
   gather_facts: true
-
+  hosts: all
+  name: Verify
   tasks:
-    - name: Check if consul can run
-      ansible.builtin.command:
-        cmd: consul --version
-      changed_when: false
+  - ansible.builtin.command:
+      cmd: consul --version
+    changed_when: false
+    name: Check if consul can run

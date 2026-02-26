@@ -1,31 +1,27 @@
 ---
+dependencies: []
 galaxy_info:
   author: buluma
-  role_name: consul
-  description: Install and configure consul on your system.
-  license: Apache-2.0
   company: ShadowNet
+  description: Install and configure consul on your system.
+  galaxy_tags:
+    - consul
+  license: Apache-2.0
   min_ansible_version: "2.12"
-
   platforms:
     - name: Amazon
       versions:
-        - Candidate
+        - all
     - name: Debian
       versions:
-        - bullseye
+        - all
     - name: EL
       versions:
         - all
     - name: Fedora
-      versions:  # Will never work on "all", as rawhide is not supported by HC.
-        - "37"
-        - "38"
+      versions:
+        - all
     - name: Ubuntu
       versions:
         - all
-
-  galaxy_tags:
-    - consul
-
-dependencies: []
+  role_name: consul

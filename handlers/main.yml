@@ -1,6 +1,4 @@
 ---
-# handlers file for consul
-
 - name: Restart consul
   ansible.builtin.service:
     name: consul
