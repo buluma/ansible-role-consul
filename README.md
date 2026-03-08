@@ -50,7 +50,7 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 
 ```yaml
 ---
-consul_client_addr: 0.0.0.0
+consul_client_addr: "0.0.0.0"
 consul_data_dir: /opt/consul
 consul_datacenter: my-dc-1
 consul_install_package: true
@@ -109,3 +109,4 @@ If you find issues, please register them on [GitHub](https://github.com/buluma/a
 ## [Author Information](#author-information)
 
 [buluma](https://buluma.github.io/)
+
