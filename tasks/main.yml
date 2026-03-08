@@ -33,8 +33,8 @@
     mode: "0644"
     owner: consul
     src: consul.hcl.j2
-  notify:
-    - Restart consul
+  notify: Restart consul
+
 - name: Configure a service in consul
   ansible.builtin.template:
     dest: /etc/consul.d/service-{{ item.name }}-{{ item.port }}.hcl
@@ -45,10 +45,10 @@
   loop: "{{ consul_services }}"
   loop_control:
     label: "{{ item.name }}"
-  notify:
-    - Restart consul
+  notify: Restart consul
   when:
     - consul_services is defined
+
 - name: Place license
   ansible.builtin.copy:
     content: "{{ consul_license }}"
@@ -56,11 +56,11 @@
     group: consul
     mode: "0644"
     owner: consul
-  notify:
-    - Restart consul
+  notify: Restart consul
   when:
     - consul_license is defined
     - consul_license != ""
+
 - name: Start and enable consul
   ansible.builtin.service:
     enabled: true
