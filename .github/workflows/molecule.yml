@@ -15,7 +15,7 @@ on:
       - master
       - main
   schedule:
-    - cron: '5 3 3 * *'
+    - cron: "5 3 3 * *"
 
   workflow_dispatch:
 
@@ -79,7 +79,7 @@ jobs:
           sudo systemctl restart docker || true
 
       - name: Install Docker
-        uses: docker/setup-buildx-action@v3
+        uses: docker/setup-buildx-action@v4
 
       - name: Install dependencies
         run: |

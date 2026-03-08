@@ -4,6 +4,6 @@
   hosts: all
   name: Prepare
   roles:
-  - role: buluma.bootstrap
-  - role: buluma.core_dependencies
-  - role: buluma.hashicorp
+    - role: buluma.bootstrap
+    - role: buluma.core_dependencies
+    - role: buluma.hashicorp
