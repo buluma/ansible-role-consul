@@ -1,9 +1,8 @@
 ---
-- become: true
-  gather_facts: false
 - name: Converge
   hosts: all
-  name: Converge
+  become: true
+  gather_facts: false
   roles:
     - consul_bind_addr: 0.0.0.0
       consul_bootstrap_expect: 1
