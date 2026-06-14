@@ -1,6 +1,7 @@
 ---
 - become: true
   gather_facts: true
+- name: Verify
   hosts: all
   name: Verify
   tasks:
