@@ -1,13 +1,19 @@
 # Changelog
 
-## [Unreleased](https://github.com/buluma/ansible-role-consul/tree/HEAD)
+## [26.6.0](https://github.com/buluma/ansible-role-consul/tree/26.6.0) (2026-06-14)
 
-[Full Changelog](https://github.com/buluma/ansible-role-consul/compare/24.04.20...HEAD)
+[Full Changelog](https://github.com/buluma/ansible-role-consul/compare/24.04.20...26.6.0)
 
 **Closed issues:**
 
 - Update action [\#16](https://github.com/buluma/ansible-role-consul/issues/16)
 - rebuild action [\#15](https://github.com/buluma/ansible-role-consul/issues/15)
+
+**Merged pull requests:**
+
+- Bump docker/setup-buildx-action from 3 to 4 [\#28](https://github.com/buluma/ansible-role-consul/pull/28) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump ansible/ansible-lint from 26.1.1 to 26.2.0 [\#27](https://github.com/buluma/ansible-role-consul/pull/27) ([dependabot[bot]](https://github.com/apps/dependabot))
+- Bump actions/checkout from 4 to 6 [\#25](https://github.com/buluma/ansible-role-consul/pull/25) ([dependabot[bot]](https://github.com/apps/dependabot))
 
 ## [24.04.20](https://github.com/buluma/ansible-role-consul/tree/24.04.20) (2024-04-20)
 
