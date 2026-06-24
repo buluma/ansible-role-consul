@@ -8,17 +8,4 @@ galaxy_info:
     - consul
   license: Apache-2.0
   min_ansible_version: "2.12"
-  platforms:
-    - name: Debian
-      versions:
-        - all
-    - name: EL
-      versions:
-        - all
-    - name: Fedora
-      versions:
-        - all
-    - name: Ubuntu
-      versions:
-        - all
   role_name: consul
