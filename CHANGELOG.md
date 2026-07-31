@@ -1,5 +1,9 @@
 # Changelog
 
+## [26.6.2](https://github.com/buluma/ansible-role-consul/tree/26.6.2) (2026-07-21)
+
+[Full Changelog](https://github.com/buluma/ansible-role-consul/compare/26.6.1...26.6.2)
+
 ## [26.6.1](https://github.com/buluma/ansible-role-consul/tree/26.6.1) (2026-06-15)
 
 [Full Changelog](https://github.com/buluma/ansible-role-consul/compare/26.6.0...26.6.1)
